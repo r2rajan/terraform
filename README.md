@@ -48,4 +48,3 @@ Create a windows AWS t2.micro instance with the following resource block<br>
 	4.2. It executes the script copied in the above step
  
  5. Connection - Terraform uses a number of defaults when connecting to a resource. Any connection information provided in a   resource will apply to all the provisioners. Provisioner defined in this instance creation use windows RM as connection type for windows. Username is supplied in vars.tf and password will be prompted during terraform apply. 
-Terraform Script - windows.tf
