@@ -1,5 +1,5 @@
-variable "AWS_ACCESS_KEY"  { default="AKIAJ4Q2OYJNMVRTYJGA" }
-variable "AWS_SECRET_KEY"  { default="26aOxOax7q+Fy+aNx/3/J1hyHDAw/njeQz5syaRm" }
+variable "AWS_ACCESS_KEY"  { default="YOUR_ACCESS_KEY" }
+variable "AWS_SECRET_KEY"  { default="YOUR_SECRET_KEY" }
 variable "KEY_NAME" { default="awskey"}
 variable "PATH_TO_PUBLIC_KEY" { default="awskey.pub" }
 variable "PATH_TO_PRIVATE_KEY" { default="awskey" }
