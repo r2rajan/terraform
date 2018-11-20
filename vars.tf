@@ -1,8 +1,10 @@
-variable "AWS_ACCESS_KEY"  { default="YOUR ACCESS KEY" }
-variable "AWS_SECRET_KEY"  { default="YOUR SECRET KEY" }
+variable "AWS_ACCESS_KEY"  { default="AKIAJ4Q2OYJNMVRTYJGA" }
+variable "AWS_SECRET_KEY"  { default="26aOxOax7q+Fy+aNx/3/J1hyHDAw/njeQz5syaRm" }
 variable "KEY_NAME" { default="awskey"}
 variable "PATH_TO_PUBLIC_KEY" { default="awskey.pub" }
 variable "PATH_TO_PRIVATE_KEY" { default="awskey" }
+variable "WIN_INSTANCE_USERNAME" { default="Terraform" }
+variable "WIN_INSTANCE_PASSWORD" { }
 variable "AWS_REGION"  {
   default = "us-east-2"
 }
@@ -14,3 +16,10 @@ variable "AMIS" {
 		  us-west-2="ami-0afae182eed9d2b46"
 	    }
 }
+variable "WIN_AMIS" {
+  type = "map"
+  default = {     us-east-2="ami-028779930ada5200c"
+                  us-east-1="ami-028779930ada5200c"
+            }
+}
+
